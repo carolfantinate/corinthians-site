@@ -5,51 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Corinthians</title>
+    <link rel="shortcut icon" href="assets/imgs/logo-branca.png" type="image/x-icon">
     <link rel="stylesheet" href="estilos/reset.css">
-    <style>
-        @font-face {
-            font-family: 'lucidity';
-            src: url('fontes/Lucidity-Condensed.ttf') format('truetype');
-            font-weight: normal;
-        }
-
-        body {
-            background-color: #161616;
-            color: #fff;
-        }
-
-        header {
-            background-color: #282828;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        nav {
-            background-color: #161616;
-            width: 100%;
-            padding: 10px;
-        }
-
-        nav ul {
-            display: flex;
-            gap: 70px;
-            justify-content: center;
-        }
-
-        h2 {
-            font-family: 'lucidity', sans-serif;
-        }
-
-        .lateral {
-            display: flex;
-        }
-    </style>
+    <link rel="stylesheet" href="estilos/style.css">
 </head>
 
 <body>
     <header>
-        <h1>SCCP</h1>
+        <h1 class="titulo-header">SCCP</h1>
         <nav>
             <ul>
                 <li><a href="#">Home</a></li>
@@ -60,56 +23,171 @@
             </ul>
         </nav>
     </header>
+    <img src="assets/imgs/logo-branca.png" alt="logo-corinthians" class="logo-corinthians">
+    <img src="assets/imgs/cp.png" alt="logo-antiga" class="logo-antiga">
 
     <main>
-        <section>
-            <h1>Corinthians</h1>
+        <section class="introducao">
+            <h1 class="titulo">Corinthians</h1>
             <div class="lateral">
-                <img src="" alt="">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi voluptates voluptatibus explicabo.
-                    Perspiciatis dolor minima quasi quia cumque ducimus numquam. Voluptatibus enim placeat beatae at
-                    quasi nobis dicta facilis minima?</p>
-            </div>
-        </section>
-
-        <section>
-            <h2>Torcida</h2>
-            <div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi voluptates voluptatibus explicabo.
-                    Perspiciatis dolor minima quasi quia cumque ducimus numquam. Voluptatibus enim placeat beatae at
-                    quasi nobis dicta facilis minima?</p>
-                <img src="" alt="">
-            </div>
-            <div class="cards-torcidas">
-                <div class="card-torcida">
-                    <img src="" alt="">
-                    <h3>Gaviões da Fiel</h3>
+                <img src="https://imagens.ebc.com.br/PwcxzHNvyU60ap2v6sdzkHZwQwE=/1170x700/smart/https://agenciabrasil.ebc.com.br/sites/default/files/thumbnails/image/corinthians_escudo.jpg?itok=GQVirM8F"
+                    alt="escudo corinthians" id="img-intro">
+                <div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi voluptates voluptatibus
+                        explicabo.
+                        Perspiciatis dolor minima quasi quia cumque ducimus numquam. Voluptatibus enim placeat beatae at
+                        quasi nobis dicta facilis minima?</p> <br>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum tenetur fugit, excepturi ullam
+                        architecto quidem illo perspiciatis? Blanditiis dolores sunt eaque obcaecati labore facilis,
+                        consectetur ipsam numquam maiores impedit earum.</p>
                 </div>
             </div>
         </section>
 
-        <section>
-            <div>
-                <h2>Mascote</h2>
-                <img src="" alt="">
+        <section class="sec-torcida">
+            <h2>Torcida</h2>
+            <div class="lateral">
+                <div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi voluptates voluptatibus
+                        explicabo.
+                        Perspiciatis dolor minima quasi quia cumque i nobis dicta facilis minima?</p> <br>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aperiam quis mollitia tempora
+                        consectetur error, beatae minima inventore illo, iste assumenda molestias. Suscipit, accusamus
+                        harum? Iure natus id facere velit?</p>
+                </div>
+                <img src="https://img.olympics.com/images/image/private/t_s_pog_staticContent_hero_xl/f_auto/primary/piy2qfvi7a2tyxuvbmpz"
+                    alt="torcida gavioes da fiel" id="img-torcida">
             </div>
-            <div>
+            <div class="container-cards">
+
+                <div class="flip card"> <!-- Card Camisa 12 -->
+                    <div class="front"
+                        style="background-image: url(https://cdn.meutimao.com.br/fotos-do-corinthians/w941/2021/08/15/_ht5w.jpg)">
+                    </div>
+                    <div class="back">
+                        <p>A Fiel Torcida Jovem Camisa 12 é uma das mais tradicionais torcidas organizadas do
+                            Corinthians, fundada em 6 de agosto de 1971. Conhecida como "O Jogador das Arquibancadas", a
+                            organizada se destaca pela forte presença em jogos, padronização e apoio incondicional</p>
+                    </div>
+                </div>
+
+                <div class="flip card"> <!-- Card Gavioes -->
+                    <div class="front"
+                        style="background-image: url(https://cdn.meutimao.com.br/_upload/wallpapers/bandeira_da_gavioes_da_fiel_z8_1600x1200.jpg)">
+                    </div>
+                    <div class="back">
+                        <p>Os Gaviões da Fiel, fundados em 1º de julho de 1969, são a maior torcida organizada do Sport
+                            Club Corinthians Paulista e uma das principais escolas de samba de São Paulo. A torcida
+                            nasceu durante a ditadura militar e se posicionava contra o autoritarismo, exigindo
+                            transparência e democratização.</p>
+                    </div>
+                </div>
+
+                <div class="flip card"> <!-- Card pavilhao 9 -->
+                    <div class="front"
+                        style="background-image: url(https://static.gazetaesportiva.com/uploads/imagem/2018/10/26/TreinoSP10-1024x472.jpg)">
+                    </div>
+                    <div class="back">
+                        <p>A Torcida Organizada Pavilhão 9 é uma entidade de apoio ao Sport Club Corinthians Paulista,
+                            fundada em 9 de setembro de 1990 por integrantes da zona oeste de São Paulo e associada ao
+                            histórico do Carandiru. </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="sec-repre">
+            <div class="mascote">
+                <h2>Mascote</h2>
+                <div class="card-masc">
+                    <div class="conteudo-card">
+                        <div class="frente">
+                            <img src="https://cdn.meutimao.com.br/fotos-do-corinthians/w941/2018/09/02/mosqueteiro_homenageando_os_108_anos_do_clube_w.jpg"
+                                alt="Mascote do Corinthians" class="img-repre">
+                        </div>
+                        <div class="atras">
+                            <p>O mascote oficial do Corinthians é o Mosqueteiro. Ele foi adotado na década de 1920
+                                devido à fibra,
+                                garra e coragem demonstradas pela equipe em campo, inspirando-se no personagem da obra
+                                "Os Três
+                                Mosqueteiros". No entanto, o Gavião se tornou um símbolo popular muito forte, associado
+                                à torcida
+                                organizada Gaviões da Fiel, coexistindo como figura emblemática do clube.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mascote">
                 <h2>Padroeiro</h2>
-                <img src="" alt="">
+                <div class="card-masc">
+                    <div class="conteudo-card">
+                        <div class="frente">
+                            <img src="https://revistaanamaria.com.br/wp-content/uploads/2025/04/por-que-sao-jorge-e-o-padroeiro-do-corinthians-1.jpg"
+                                alt="Padroeiro do Corinthians" class="img-repre">
+                        </div>
+                        <div class="atras">
+                            <p>O padroeiro oficial do Sport Club Corinthians Paulista é São Jorge, conhecido como o
+                                "Santo Guerreiro". A forte ligação consolidou-se na década de 1920, quando o clube
+                                adquiriu a Fazenda São Jorge, local que se tornou o Parque São Jorge, e adotou o santo
+                                para proteger o time, simbolizando fé, garra e luta.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
         <section class="hino">
             <h2>Hino</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi voluptates voluptatibus explicabo.
-                Perspiciatis dolor minima quasi quia cumque ducimus numquam. Voluptatibus enim placeat beatae at
-                quasi nobis dicta facilis minima?</p>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed doloribus similique omnis commodi quae?
-                Quasi quo, maxime unde consectetur necessitatibus illo molestiae similique nobis repellat dolorum omnis,
-                non, ab corrupti?</p>
+            <div class="letra-hino">
+                <img src="assets/imgs/disco.png" alt="disco de vinil" id="img-disco">
+                <audio id="meuAudio" src="assets/sons/hino-corinthians.mp3"></audio>
+                <button id="botaoPlay">
+                    <i class="fa-solid fa-play" id="play-icon"></i>
+                </button>
+
+                <div>
+                    <p class="estrofe">Salve o Corinthians
+                        <br> O campeão dos campeões
+                        <br> Eternamente
+                        <br> Dentro dos nossos corações
+                    </p> <br>
+                    <p class="estrofe">
+                        Salve o Corinthians
+                        <br> De tradições e glórias mil
+                        <br> Tu és orgulho
+                        <br> Dos desportistas do Brasil
+                    </p> <br>
+                    <p class="estrofe">
+                        Teu passado é uma bandeira
+                        <br> Teu presente é uma lição
+                        <br> Figuras entre os primeiros
+                        <br> Do nosso esporte bretão
+                    </p>
+                </div>
+                <div>
+                    <p class="estrofe">Corinthians grande
+                        <br>Sempre altaneiro
+                        <br> És do Brasil
+                        <br> O clube mais brasileiro
+                    </p> <br>
+                    <p class="estrofe">
+                        Salve o Corinthians
+                        <br> O campeão dos campeões
+                        <br> Eternamente
+                        <br> Dentro dos nossos corações
+                    </p> <br>
+                    <p class="estrofe">
+                        Salve o Corinthians
+                        <br> De tradições e glórias mil
+                        <br> Tu és orgulho
+                        <br> Dos desportistas do Brasil
+                    </p>
+                </div>
+            </div>
         </section>
-        <section>
-            <img src="" alt="">
+        <section class="sec-escudos">
+            <img src="assets/imgs/escudos.png" alt="Escudos do Corinthians" id="img-escudos">
             <h2>SPORT CLUB CORINTHIANS PAULISTA</h2>
         </section>
     </main>
@@ -117,6 +195,33 @@
     <footer>
         <p>Carol e Bea</p>
     </footer>
+
+    <script src="https://kit.fontawesome.com/f9c90ebe75.js" crossorigin="anonymous"></script>
+    <script>
+        const botao = document.getElementById('botaoPlay');
+        const audio = document.getElementById('meuAudio');
+        const disco = document.getElementById('img-disco');
+        const icone = document.getElementById('play-icon');
+
+        botao.addEventListener('click', function () {
+
+            if (audio.paused) {
+                audio.play();
+                disco.classList.add('girando');
+
+                icone.classList.remove('fa-play');
+                icone.classList.add('fa-pause');
+
+            } else {
+                audio.pause();
+                disco.classList.remove('girando');
+
+                icone.classList.remove('fa-pause');
+                icone.classList.add('fa-play');
+            }
+
+        });
+    </script>
 </body>
 
 </html>
