@@ -1,0 +1,116 @@
+@font-face {
+            font-family: 'lucidity';
+            src: url('../assets/fontes/Lucidity-Condensed.ttf') format('truetype');
+            font-weight: normal;
+        }
+
+        @font-face {
+            font-family: 'brasika';
+            src: url('../assets/fontes/Brasika-Regular.ttf') format('truetype');
+        }
+
+        main {
+            padding: 20px 80px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .titulo-sec {
+            font-family: 'lucidity', sans-serif;
+            font-size: 2.8em;
+            letter-spacing: 5px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .container-cards {
+            display: flex;
+            gap: 50px;
+            justify-content: center;
+            margin-bottom: 40px;
+        }
+
+        .card {
+            background-color: #393939;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            width: 200px;
+        }
+
+        .card h2 {
+            font-size: 40px;
+            font-weight: 600;
+        }
+
+        .card p {
+            text-transform: uppercase;
+            font-size: 14px;
+        }
+
+
+        .box-titulos {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .sec-titulos {
+            margin-bottom: 40px;
+        }
+
+
+        .subtitle {
+            font-family: 'lucidity', sans-serif;
+            font-size: 2em;
+            letter-spacing: 3px;
+        }
+
+        .box-titulos h3 {
+            font-size: 1.2em;
+            text-transform: uppercase;
+        }
+
+        .container-titulos {
+            display: flex;
+            gap: 30px;
+            margin-top: 20px;
+        }
+
+        .titulo {
+            background-color: #393939;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            width: 230px;
+            border: 2px solid;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .tit-inter .titulo {
+            border-color: #89a9dc;
+        }
+
+        .tit-inter h3 {
+            color: #89a9dc;
+        }
+
+        .tit-nac .titulo {
+            border-color: #dcd289;
+        }
+
+        .tit-nac h3 {
+            color: #dcd289;
+        }
+
+        .tit-paul .titulo {
+            width: 300px;
+            border-color: #dc8989;
+        }
+
+        .tit-paul h3 {
+            color: #dc8989;
+        }
