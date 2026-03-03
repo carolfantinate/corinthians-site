@@ -19,10 +19,10 @@ function carregarPergunta() {
     perguntaElemento.textContent = pergunta.pergunta;
     respostasElemento.innerHTML = "";
 
-    contador.textContent = 
+    contador.textContent =
         `Pergunta ${perguntaAtual + 1} de ${perguntas.length}`;
 
-    barra.style.width = 
+    barra.style.width =
         ((perguntaAtual) / perguntas.length) * 100 + "%";
 
     pergunta.respostas.forEach((resposta, index) => {
