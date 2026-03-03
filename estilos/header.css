@@ -98,3 +98,19 @@ footer {
     padding: 15px;
     margin-top: 50px;
 }
+
+/*----------------------*/
+.voltar {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #525252;
+    color: #fff;
+    padding: 12px 15px;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
