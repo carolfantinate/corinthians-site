@@ -169,34 +169,27 @@
 
     <script src="https://kit.fontawesome.com/f9c90ebe75.js" crossorigin="anonymous"></script>
     <script>
-        (function () {
-            "use strict";
+        const itensTimeline = document.querySelectorAll(".timeline li");
 
-            var items = document.querySelectorAll(".timeline li");
+        function elementoEstaVisivel(elemento) {
+            const posicao = elemento.getBoundingClientRect();
+            return (
+                posicao.top >= 0 &&
+                posicao.bottom <= window.innerHeight
+            );
+        }
 
-            function isElementInViewport(el) {
-                var rect = el.getBoundingClientRect();
-                return (
-                    rect.top >= 0 &&
-                    rect.left >= 0 &&
-                    rect.bottom <=
-                    (window.innerHeight || document.documentElement.clientHeight) &&
-                    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-                );
-            }
-
-            function callbackFunc() {
-                for (var i = 0; i < items.length; i++) {
-                    if (isElementInViewport(items[i])) {
-                        items[i].classList.add("in-view");
-                    }
+        function ativarAnimacao() {
+            for (let i = 0; i < itensTimeline.length; i++) {
+                if (elementoEstaVisivel(itensTimeline[i])) {
+                    itensTimeline[i].classList.add("in-view");
                 }
             }
+        }
 
-            window.addEventListener("load", callbackFunc);
-            window.addEventListener("resize", callbackFunc);
-            window.addEventListener("scroll", callbackFunc);
-        })();
+        window.addEventListener("load", ativarAnimacao);
+        window.addEventListener("scroll", ativarAnimacao);
+        window.addEventListener("resize", ativarAnimacao);
 
     </script>
 </body>
